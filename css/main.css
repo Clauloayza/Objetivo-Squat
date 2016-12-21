@@ -3,19 +3,9 @@
 header{
     height: 250px;
 }
-
-.fondo{
-    background: url('../images/fondo.png') no-repeat;
-    background-size: cover;
-    background-position: 0% 61%;
-}
-
-.logo {
-    text-align: center;
-}
-.logo img{
-    margin-top: 20px;
-    width: 85%;
+.logo{
+    margin-top: 60px;
+    width: 50%;
 }
 
 /*-------------------->> SECTION EJERCICIO <<--------------------*/
@@ -42,7 +32,7 @@ header{
 /*-------------------->> SECTION FOOTER <<--------------------*/
 
 .fondofooter{
-    background-color: #ffb500;
+    background-color: #000;
 }
 
 footer p{
