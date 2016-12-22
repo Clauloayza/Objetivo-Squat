@@ -1,23 +1,14 @@
-//prompt("Por favor, ingrese el número de horas trabajadas");
-
-var puntosSquad = document.getElementById("puntosSquad");
-var maxPuntos = document.getElementById("maxPuntos");
-var divnota = document.getElementById("nota");
-
-
 function calcular()
 {
-	if(maxPuntos*0.8 < puntosSquad)
+	var puntosSquad = document.getElementById("punto_squad").value;
+	var maxPuntos = document.getElementById("max_puntos").value;
+	//(100 * punto_squad) / max_puntos
+	var porcentajeSquad = (100 * puntosSquad) / maxPuntos;
+
+	if(porcentajeSquad >= 80)
 	{
-		//Si no es verdad hace esto
-		nota.innerHTML = "Muy bien squad";
-		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">No se ingresaron valores</div>';
+		document.getElementById("salida").innerHTML = "Muy bien squad!";
 	}else{
-		console.log("Horas");
-		pagoSemanal = parseFloat(pagoHora.value) * parseFloat(horasTrabajadas.value);
-		salida.innerHTML = pagoSemanal.toFixed(2);
+		document.getElementById("salida").innerHTML = "Pueden hacerlo mejor";
 	}
-
-
-
 }
